@@ -1,0 +1,6 @@
+{
+  "name": "Kirana AI — Ungal Kadai Thunai",
+  "description": "An AI-powered retail assistant and shop management system designed specifically for Kirana and provision stores in Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

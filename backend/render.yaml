@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: kirana-ai-backend
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false            # set in the Render dashboard
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: DATABASE_URL
+        value: sqlite:///./data/kirana.db
+      - key: CORS_ORIGINS
+        sync: false            # e.g. https://your-frontend.vercel.app
+      - key: SEED_DEMO_DATA
+        value: true

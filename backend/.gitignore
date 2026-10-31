@@ -1,0 +1,24 @@
+# env / secrets
+.env
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# database (created at runtime)
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+!data/.gitkeep
+!data/aliases.json
+
+# misc
+.DS_Store
+.idea/
+.vscode/
